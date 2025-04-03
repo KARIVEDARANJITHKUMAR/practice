@@ -7,6 +7,9 @@ const {PORT,DB_USER,DB_PASSWORD} = process.env
 const app = express()
 app.use(express.json())
 
+const cors = require("cors");
+app.use(cors());
+
 const BookRouter = require("./route/bookrouter")
 
 
